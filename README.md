@@ -2,7 +2,8 @@ mini-timeDirective
 ==================
 
 ##Objectives
-The purpose of this Mini Project is to get you used to creating custom Directives. Custom directives are one of the most powerful aspects of Angular because they allow you to create re-usable components.
+The purpose of this Mini Project is to get you used to creating custom Directives.
+Custom directives are one of the most powerful aspects of Angular because they allow you to create re-usable components.
 
 ###Step 1: Angular Skeleton 
 * Fork this repo, then clone your fork.
@@ -35,10 +36,16 @@ Remember to include ng-app in your html and call your module 'timeApp'. Also, re
   }
 });
 ```
-* Now what we want to do is give our directive certain properties. The first one is we want to make sure it's only used as an element, i.e., ```<show-time>```. You do this by setting ```restrict: 'E' ``` in the object that's being returned from the directives callback.
-* The next property we want to give it is a template. This template is just an HTML string that will show wherever the directive is used. Add a property to the object being returned called 'template' whose value is ```<div> The current time is {{time}} </div>```
-* What we're going to do now is use the link method to get the current time, then update scope.time which will in turn update the template.
-* Add a method onto your returned object called link. Remember, this link method is where you want to put all your DOM manipulation for JavaScript. 
+* Now what we want to do is give our directive certain properties. The first one is we want to make sure it's only
+used as an element, i.e., ```<show-time>```. You do this by setting ```restrict: 'E' ``` in the object that's being
+returned from the directives callback.
+* The next property we want to give it is a template. This template is just an HTML string that will show wherever the
+directive is used. Add a property to the object being returned called 'template' whose value is ```<div> The current
+time is {{time}} </div>```
+* What we're going to do now is use the link method to get the current time, then update scope.time which will in turn
+update the template.
+* Add a method onto your returned object called link. Remember, this link method is where you want to put all your DOM
+manipulation for JavaScript.
 * The link value usually takes three parameters. scope, element, and attrs. Add those as parameters now
 * Now create a variable called currentTime and set it equal to ```new Date()```, which is just the current time.
 * Now, add a property on scope called time which is equal to  ```currentTime.toString```
