@@ -1,0 +1,25 @@
+{
+  "name": "mini-timeDirective",
+  "version": "1.0.0",
+  "description": "mini-timeDirective\r ==================",
+  "main": "data.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Phoenix314159/mini-timeDirective.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Phoenix314159/mini-timeDirective/issues"
+  },
+  "homepage": "https://github.com/Phoenix314159/mini-timeDirective#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2"
+  }
+}

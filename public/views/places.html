@@ -1,0 +1,17 @@
+<h1>The places you have been to:</h1>
+<div ng-repeat="x in places">
+    <div><h3>City:&nbsp;{{x.city}}</h3></div>
+    <div><h3>State:&nbsp;{{x.state}}</h3></div>
+    <div><h3>Country:&nbsp;{{x.country}}</h3></div>
+    <hr/>
+</div>
+<div class="left">
+    <div><input type="text" placeholder="enter a city" ng-model="city"/></div>
+    <div><input type="text" placeholder="enter a state" ng-model="state"/></div>
+    <div><input type="text" placeholder="enter a country" ng-model="country"/></div>
+
+    <div>
+        <button ng-click="addPlace()">Add a new place</button>
+    </div>
+    <button ng-click="deletePlace()">Delete a place</button>
+</div>

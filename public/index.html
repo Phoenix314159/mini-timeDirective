@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" ng-app="timeApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cool</title>
+    <link rel="stylesheet" href="peopleStyle.css">
+    <link rel="stylesheet" href="indexStyle.css">
+
+
+
+</head>
+<body ng-controller="mainCtrl">
+<div class="cool"> Hello {{text}}!
+<show-time></show-time>
+</div>
+<nav>
+    <a ui-sref="home">home</a>
+    <a ui-sref="people">people</a>
+    <a ui-sref="places">places</a>
+
+</nav>
+<ui-view></ui-view>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
+<script src="app.js"></script>
+<script src="js/controller.js"></script>
+<script src="js/mainService.js"></script>
+<script src="js/homeCtrl.js"></script>
+<script src="js/timeDirective.js"></script>
+<script src="js/placesCtrl.js"></script>
+
+
+</body>
+</html>

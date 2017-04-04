@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="./peopleStyle.css">
+<div ng-repeat="x in data">
+    <h2>Name:&nbsp;{{x.name}}</h2>
+    <h2>Age:&nbsp;{{x.age}}</h2>
+    <h2>Height:&nbsp;{{x.height}}</h2>
+    <hr/>
+</div>
+<div class="left">
+    <div><input type="text" placeholder="enter a name" ng-model="name"/></div>
+    <div><input type="text" placeholder="enter an age" ng-model="age"/></div>
+    <div><input type="text" placeholder="enter a height" ng-model="height"/></div>
+    <div>
+        <button ng-click="morePeople()">Add person</button>
+    </div>
+    <button ng-click="deletePerson()">Delete person</button>
+</div>
